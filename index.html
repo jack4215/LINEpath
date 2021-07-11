@@ -44,12 +44,12 @@
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     async function main() {
-      await liff.init({ liffId: "1653575653-8WwXMavK" })
+      await liff.init({ liffId: "1654805431-RVYvxYWB" })
       if (liff.isLoggedIn()) {
         getUserProfile()
         document.getElementById("accessToken").append(liff.getAccessToken())
       } else {
-        liff.login({ redirectUri: "https://mokmoon.com/liff2/path" })
+        liff.login({ redirectUri: "https://jack4215.github.io/LINEpath/" })
       }
     }
     main()
