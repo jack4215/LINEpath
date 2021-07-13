@@ -21,9 +21,10 @@
 <body>
   <p><P Align=center><img src="https://i.imgur.com/u3eiKjw.jpg" width="300"></p>
   <hr width=90%>  
-  <span style="font-size:13px;">
+  <span style="font-size:15px;">
    <p id="displayName"><b>　displayName:</b> </p>
    <p id="userId"><b>　userId:</b> </p>
+   <p id="statusMessage"><b>　statusMessage:</b> </p>
    <p id="decodedIDToken"><b>　email:</b> </p>
    <p><b>　Event Title: </b> --</p>
   </span>
@@ -46,7 +47,7 @@
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("userId").append(profile.userId)
-  //    document.getElementById("statusMessage").append(profile.statusMessage)
+      document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
