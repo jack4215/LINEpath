@@ -1,3 +1,3 @@
 # LINEpath
 
-Check LINE profile information
+Get LINE profile information
