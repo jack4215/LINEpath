@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
-  <meta http-equiv="cleartype" content="on">
-  <title>Path</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>LINE Profile Information</title>
+  <meta name="description" content="LINE Profile Information">
+  <meta name="keywords" content="">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Jack Lu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta http-equiv="ImageToolBar" content="NO"> 
+  <link rel="shortcut icon" href="https://i.imgur.com/VIbdVEb.png">
+  <link rel="apple-touch-icon" href="https://i.imgur.com/TtuTiTz.png">
+  <link href="https://today.line-scdn.net/dist/article_main.5a82412c48504d4a2a64.css" rel="stylesheet">  
 </head>
 
 <body>
-
-  <p id="userId"><b>userId:</b> </p>
-  <p id="displayName"><b>displayName:</b> </p>
-  <p id="statusMessage"><b>statusMessage:</b> </p>
-  <p id="decodedIDToken"><b>email:</b> </p>
-  <p id="accessToken"><b>AccessToken:</b> </p>
-  <button id="btnLogOut" onclick="logOut()">Log Out</button>
+  <p><img src="https://i.imgur.com/WgaYQPt.jpg" width="450"></p>
+  <font size="3">
+   <p id="userId"><b>userId:</b> </p>
+   <p id="displayName"><b>displayName:</b> </p>
+   <p id="statusMessage"><b>statusMessage:</b> </p>
+   <p id="decodedIDToken"><b>email:</b> </p>
+   <p id="accessToken"><b>AccessToken:</b> </p>
+  </font>
 
   <script>
     const queryString = decodeURIComponent(window.location.search);
