@@ -24,10 +24,8 @@
   <span style="font-size:15px;">
    <p id="displayName"><b>　　displayName:</b> </p>
    <p id="userId"><b>　　userId:</b> </p>
-   <p id="decodedIDToken"><b>　　email:</b> </p>
    <hr width=90%>
-   <p><b>　　Event Title: </b> --</p>
-   <p><b>　　Your Rewards: </b> --</p>
+   <p><b>　　Event Title: Jack｜LINE 點數獲得社群活動 (2021-07)</b> --</p>
   </span>
 
   <script>
@@ -50,7 +48,7 @@
       document.getElementById("userId").append(profile.userId)
  //     document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
-      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+//      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     async function main() {
       await liff.init({ liffId: "1656185375-mQ4AqkpL" })
