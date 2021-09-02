@@ -1,3 +1,3 @@
 # LINEpath
 
-Get LINE profile information.
+筍伯♪ Jack |･ω･)｜領獎身分確認
