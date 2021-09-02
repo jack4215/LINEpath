@@ -51,16 +51,16 @@
     
     async function getUserProfile() {
       const profile = await liff.getProfile()
+      document.getElementById("displayName").append(profile.displayName)
       document.getElementById("userId").append(profile.userId)
       document.getElementById("statusMessage").append(profile.statusMessage)
-      document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     function getEnvironment() {
-      document.getElementById("lineVersion").append(liff.getLineVersion())
-      document.getElementById("os").append(liff.getOS())
-      document.getElementById("version").append(liff.getVersion())
       document.getElementById("isInClient").append(liff.isInClient())
+      document.getElementById("os").append(liff.getOS())
+      document.getElementById("lineVersion").append(liff.getLineVersion())
+      document.getElementById("version").append(liff.getVersion())
     }
     
     async function main() {
