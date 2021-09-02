@@ -64,6 +64,7 @@
       await liff.init({ liffId: "1656185375-mQ4AqkpL" })
       if (liff.isLoggedIn()) {
         getUserProfile()
+        getEnvironment()
         document.getElementById("accessToken").append(liff.getAccessToken())
       } else {
         liff.login({ redirectUri: "https://jack4215.github.io/LINEpath/" })
