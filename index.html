@@ -56,21 +56,14 @@
       document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
-    function getContext() {
-        document.getElementById("type").append(liff.getContext().type)
-        document.getElementById("viewType").append(liff.getContext().viewType)
-        document.getElementById("utouId").append(liff.getContext().utouId)
-        document.getElementById("roomId").append(liff.getContext().roomId)
-        document.getElementById("groupId").append(liff.getContext().groupId)
-    }
-    function getEnvironment() {
+ /*   function getEnvironment() {
       document.getElementById("lineVersion").append(liff.getLineVersion())
       document.getElementById("os").append(liff.getOS())
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.isInClient())
-    }
+    }*/
     
     async function main() {
       await liff.init({ liffId: "1656185375-mQ4AqkpL" })
