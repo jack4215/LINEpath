@@ -24,7 +24,7 @@
   <font size="2">
    <p id="displayName"><b>　　displayName:</b> </p>
    <p id="userId"><b>　　userId:</b> </p>
-   <p id="isInClient"><b>　　isInClient:</b> </p>
+   <p id="isInClient"><b>　　isInClient:</b>/ <p id="os"> </p></p>
   </font>
   <hr width=90%>
   <font size="2">
@@ -52,11 +52,14 @@
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("userId").append(profile.userId)
-  //    document.getElementById("statusMessage").append(profile.statusMessage)
+      document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
-  //    document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     function getEnvironment() {
+      document.getElementById("lineVersion").append(liff.getLineVersion())
+      document.getElementById("os").append(liff.getOS())
+      document.getElementById("version").append(liff.getVersion())
       document.getElementById("isInClient").append(liff.isInClient())
     }
     
